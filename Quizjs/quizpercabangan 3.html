@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deteksi Tahun Kabisat</title>
+</head>
+
+<body>
+    <h2>Masukkan Tahun</h2>
+    <input type="number" id="tahun" placeholder="Masukkan tahun">
+    <button onclick="cekTahunKabisat()">Cek Tahun</button>
+    <p id="hasil"></p>
+
+    <script>
+        // Fungsi untuk mengecek apakah tahun kabisat
+        function cekTahunKabisat() {
+            // Ambil input tahun dari pengguna
+            const tahun = parseInt(document.getElementById("tahun").value);
+
+
+            let hasil = "";
+            if ((tahun % 4 === 0 && tahun % 100 !== 0) || (tahun % 400 === 0)) {
+                hasil = tahun + " adalah tahun kabisat.";
+            } else {
+                hasil = tahun + " adalah tahun Masehi biasa.";
+            }
+            document.getElementById("hasil").textContent = hasil;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percabangan Switch Case</title>
+</head>
+
+<body>
+    <script>
+        var jawab = prompt("Anda beruntung! Silahkan pilih Doorprize Dengan Memasukan Angka 1 - 5 ");
+        var Doorprize = "";
+
+        switch (jawab) {
+            case "1":
+                Doorprize = "RAM";
+                break;
+            case "2":
+                Doorprize = "IPAD";
+                break;
+            case "3":
+                Doorprize = "MOTHERBOARD";
+                break;
+            case "4":
+                Doorprize = "HARDDISK";
+                break;
+            case "5":
+                Doorprize = "LAPTOP";
+                break;
+            default:
+                document.write("<p>Maaf! Pilihan Tidak Ada!</p>");
+        }
+
+        if (Doorprize === "") {
+            document.write("<p>Anda Gagal Mendapat Doorprize</p>");
+        } else {
+            document.write("<h2>Selamat Anda Mendapatkan " + Doorprize + "</h2>");
+        }
+    </script>
+</body>
+
+</html>
