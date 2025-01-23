@@ -14,7 +14,6 @@ for (looping = 1; looping <= 100;  looping *=5) {
     console.log(looping)
 }
 
-//3
 let angka = 5;
 console.log("Perkalian dari " + angka + " adalah:");
 
