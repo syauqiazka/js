@@ -10,10 +10,6 @@ for (looping = 1; looping <= 100;  looping +=2) {
 }
 
 //3
-for (looping = 1; looping <= 100;  looping *=5) {
-    console.log(looping)
-}
-
 let angka = 5;
 console.log("Perkalian dari " + angka + " adalah:");
 
