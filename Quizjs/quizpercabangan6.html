@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var jawab = prompt("silahkan masuk kan nomer bulan islam");
+    var bulan = "";
+
+    switch (jawab) {
+        case "1":
+            bulan = "Muharram";
+            break;
+        case "2":
+            bulan = "Safar";
+            break;
+        case "3":
+            bulan = "Rabiul Awal";
+            break;
+        case "4":
+            bulan = "Rabiul Akhir";
+            break;
+        case "5":
+            bulan = "Rabiul Akhir";
+            break;
+            case "6":
+            bulan = "Jumadil Akhir ";
+            break;
+            case "7":
+            bulan = "Rajab";
+            break;
+            case "8":
+            bulan = "Sya'ban";
+            break;
+            case "9":
+            bulan = "Ramadhan";
+            break;
+            case "10":
+            bulan = "Syawal";
+            break;
+            case "11":
+            bulan = "Dzulqa'dah";
+            break;
+            case "12":
+            bulan = "Dzulhijja";
+            break;
+        default:
+            document.write("<p> MAAF PILIHAN TIDAK ADA!</p>");
+    }
+    if (bulan === "") {
+            document.write("<p>SILAHKAN COBA LAGI </p>");
+        } else {
+            document.write("<h2>Bulan Islam Ke-" + jawab + " Adalah " + bulan + "</h2>");
+        }
+    </script>
+</body>
+</html>
