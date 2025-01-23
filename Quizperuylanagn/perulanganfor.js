@@ -5,8 +5,10 @@ for (looping = 1; looping <= 10;  looping ++) {
 
 
 //2
+let x =1
 for (looping = 1; looping <= 100;  looping +=2) {
-    console.log(`angka ke:  ${looping}`)
+    console.log(`angka ke: ${x}  ${looping}`)
+    x++
 }
 
 //3
