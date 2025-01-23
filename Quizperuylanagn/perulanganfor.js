@@ -6,7 +6,7 @@ for (looping = 1; looping <= 10;  looping ++) {
 
 //2
 for (looping = 1; looping <= 100;  looping +=2) {
-    console.log(looping)
+    console.log(`angka ke:  ${looping}`)
 }
 
 //3
