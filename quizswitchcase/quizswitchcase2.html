@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kategori Produk</title>
+</head>
+
+<body>
+    <h2>Menentukan Kategori Produk</h2>
+
+    <script>
+        function tentukanKategori() {
+            var kodeProduk = prompt("Masukkan kode produk:");
+
+            // Mengambil huruf pertama dari kode produk
+            var kategori = kodeProduk.charAt(0).toUpperCase(); // Menangani jika huruf kecil
+
+            // Menggunakan switch case untuk menentukan kategori
+            switch (kategori) {
+                case 'A':
+                    alert("Kategori: Hardware Komputer");
+                    break;
+                case 'B':
+                    alert("Kategori: Buah-Buahan");
+                    break;
+                case 'C':
+                    alert("Kategori: Makanan");
+                    break;
+                default:
+                    alert("Kategori tidak dikenali.");
+            }
+        }
+
+        // Memanggil fungsi untuk menentukan kategori
+        tentukanKategori();
+    </script>
+</body>
+
+</html>

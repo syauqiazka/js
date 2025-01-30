@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function tentukanbulan() {
+                var kodebulan = prompt("Masukkan Nomor Bulan :");
+
+                // Mengambil huruf pertama dari kode produk
+                var bulan = kodebulan.charAt(0).toUpperCase(); // Menangani jika huruf kecil
+
+                // Menggunakan switch case untuk menentukan kategori
+                switch (bulan) {
+                    case '1':
+                        alert("Januari");
+                        break;
+                    case '2':
+                        alert("Februari");
+                        break;
+                    case '3':
+                        alert("Maret");
+                        break;
+                        case '4':
+                        alert("April");
+                        break;
+                        case '5':
+                        alert("Mei");
+                        break;
+                        case '6':
+                        alert("Juni");
+                        break;
+                        case '7':
+                        alert("Juli");
+                        break;
+                        case '8':
+                        alert("Agustus");
+                        break;
+                        case '9':
+                        alert("September");
+                        break;
+                        case '10':
+                        alert("Oktober");
+                        break;
+                        case '11':
+                        alert("November");
+                        break;
+                        case '12':
+                        alert("Desember");
+                        break;
+                    default:
+                        alert("MASUKAN BULAN YANG BENAR.");
+                }
+            }
+            tentukanbulan();
+    </script>
+</body>
+
+</html>

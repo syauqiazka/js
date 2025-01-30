@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kategori Produk</title>
+</head>
+
+<body>
+    <h2>Menentukan Kategori Produk</h2>
+
+    <script>
+        function tentukanJenisKendaraan() {
+                var platNomor = prompt("Masukkan kode plat nomor kendaraan:");
+
+                // Mengambil huruf pertama dari kode plat nomor
+                var jenisKendaraan = platNomor.charAt(0).toUpperCase(); // Menangani jika huruf kecil
+
+                // Menggunakan switch case untuk menentukan jenis kendaraan
+                switch (jenisKendaraan) {
+                    case 'P':
+                        alert("Jenis kendaraan: Pesawat");
+                        break;
+                    case 'M':
+                        alert("Jenis kendaraan: Mobil");
+                        break;
+                    case 'K':
+                        alert("Jenis kendaraan: Kereta");
+                        break;
+                    default:
+                        alert("Jenis kendaraan tidak dikenali.");
+                }
+            }
+
+            // Memanggil fungsi untuk menentukan jenis kendaraan
+            tentukanJenisKendaraan();
+    </script>
+</body>
+
+</html>
