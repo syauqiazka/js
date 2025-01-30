@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deteksi Positif, Negatif, atau Nol</title>
+</head>
+
+<body>
+
+    <script>
+        function cekAngka() {
+            var angka = prompt("Masukkan angka yang ingin dicek:");
+
+            // Mengecek apakah angka lebih besar, kurang dari, atau sama dengan 0
+            if (angka > 0) {
+                alert(angka + " adalah angka positif.");
+            } else if (angka < 0) {
+                alert(angka + " adalah angka negatif.");
+            } else if (angka == 0) {
+                alert(angka + " adalah nol.");
+            } else {
+                alert("Input tidak valid, masukkan angka yang benar.");
+            }
+        }
+
+        // Memanggil fungsi untuk mengecek angka
+        cekAngka();
+    </script>
+</body>
+
+</html>

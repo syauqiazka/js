@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF ELSE IF</title>
+</head>
+
+<body>
+    <script>
+        let usia = parseInt(prompt("Masukkan usia Anda:"));
+
+        let kategori;
+        switch (true) {
+            case (usia >= 0 && usia <= 12):
+                kategori = "Anak-anak";
+                break;
+            case (usia >= 13 && usia <= 17):
+                kategori = "Remaja";
+                break;
+            case (usia >= 18 && usia <= 59):
+                kategori = "Dewasa";
+                break;
+            case (usia >= 60):
+                kategori = "Lansia";
+                break;
+            default:
+                kategori = "Usia tidak valid";
+        }
+
+        document.write("Anda termasuk kategori: " + kategori);
+        alert("Anda termasuk kategori: " + kategori);
+
+    </script>
+</body>
+
+</html>

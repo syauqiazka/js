@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF ELSE IF</title>
+</head>
+
+<body>
+    <script>
+        var nilai = prompt("Inputkan Nilai PAS Pemrograman Dasar Anda:");
+        var grade = "";
+
+        if (nilai <= 100 && nilai >= 85) {
+            grade = "A";
+        } else if (nilai < 84 && nilai >= 70) {
+            grade = "Baik";
+        } else if (nilai < 69 && nilai >= 50) {
+            grade = "Baik";
+        }
+        else if (nilai < 49 && nilai >= 30) {
+            grade = "D";
+        } else if (nilai < 29 && nilai >= 0) {
+            grade = "E";
+        } else {
+            grade = "Nilai tidak valid";
+        }
+
+        document.write(`<p>NIlai Anda Adalah: ${grade}</p>`);
+    </script>
+</body>
+
+</html>

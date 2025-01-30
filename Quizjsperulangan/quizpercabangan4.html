@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF ELSE IF</title>
+</head>
+
+<body>
+    <script>
+        let Nilai = parseInt(prompt("Masukkan Nilai:"));
+
+        let kategori;
+        switch (true) {
+            case (Nilai <= 100 && Nilai >= 76):
+            kategori = "Selamat Anda Lulus Dengan Nilai: " + Nilai;
+            break;
+            case (Nilai <= 75 && Nilai >= 0):
+            kategori = "Anda Belum Lulus, Nilai Anda: " + Nilai;
+            break;
+            default:
+                kategori = "Nilai tidak valid";
+        }
+
+        document.write("Nilai Anda Adalah: " + kategori);
+        alert("Nilai Anda Adalah: " + kategori);
+
+    </script>
+</body>
+
+</html>
